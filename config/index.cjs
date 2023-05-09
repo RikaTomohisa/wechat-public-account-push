@@ -43,32 +43,25 @@ const USER_CONFIG = {
       customizedDateList: [
         // 在一起的日子
         { keyword: 'love_day', date: '2022-03-22' },
-        // 结婚纪念日
-        { keyword: 'marry_day', date: '2022-09-09' },
+        // 生日
+        { keyword: 'marry_day', date: '2004-11-04' },
       ],
     },
   ],
 
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: '0002',
+  CALLBACK_TEMPLATE_ID: '',
 
   CALLBACK_USERS: [
     {
       name: '自己',
       // 使用微信测试号：自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'oeNrH6ArZcxOg5DOzBoO9W0gbrDE',
+      id: '',
     }
   ],
-
- /** 你可以在这里写超多的你想显示的内容了！
-   * keyword是指暴露给测试号的模板字段，填什么就暴露什么, 请注意不要和README的出参表中的字段重复。
-   * 比如：keyword: "lover_prattle" ，在测试号中就是 {{ lover_prattle.DATA }}
-   * */
+  
   SLOT_LIST: [
-    // 这样配置的话，就会每次发送这句话
-    { keyword: 'encourage_oneself', contents: '你主要的问题在于读书太少而想得太多' },
-    // 这样配置的话，就会每次随机选一句话发送
     {
       keyword: 'lover_prattle',
       contents: [
